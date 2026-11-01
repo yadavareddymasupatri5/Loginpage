@@ -7,6 +7,7 @@ await page.locator("[name='password']").fill("admin123")
 await page.locator("[type='submit']").click()
 await page.locator(".oxd-userdropdown-name").click()
 await page.locator("//*[text()='Logout']").click()
+await page.waitForTimeout(3000)
 
 
 
